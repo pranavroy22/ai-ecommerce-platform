@@ -19,24 +19,23 @@ app = FastAPI(
     version="1.0.0"
 )
 
-
 # =========================
-# CORS (VERY IMPORTANT)
+# CORS
 # =========================
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # 🔥 for development (frontend can access)
+    allow_origins=[
+        "https://ai-ecommerce-platform-rho.vercel.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-
 # =========================
-# CREATE TABLES (DEV ONLY)
+# CREATE TABLES
 # =========================
 models.Base.metadata.create_all(bind=engine)
-
 
 # =========================
 # ROUTERS
@@ -47,6 +46,7 @@ app.include_router(orders.router)
 app.include_router(cart.router)
 app.include_router(ai.router)
 app.include_router(payment.router)
+
 # =========================
 # ROOT ENDPOINT
 # =========================
