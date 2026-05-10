@@ -47,22 +47,12 @@ function Cart() {
 
   const checkout = async () => {
     try {
-      // 🔥 CREATE ORDER
-      const res = await fetch("http://127.0.0.1:8000/payment/create-order", {
-        method: "POST",
-
-        headers: {
-          "Content-Type": "application/json",
-        },
-
-        body: JSON.stringify({
-          amount: cart.total_price,
-        }),
+      const res = await API.post("/payment/create-order", {
+        amount: cart.total_price,
       });
 
-      const order = await res.json();
+      const order = res.data;
 
-      // 🔥 RAZORPAY OPTIONS
       const options = {
         key: "rzp_test_SnYAGWBbo4sCDi",
 
@@ -92,7 +82,6 @@ function Cart() {
         },
       };
 
-      // 🔥 OPEN PAYMENT POPUP
       const rzp = new window.Razorpay(options);
 
       rzp.open();
