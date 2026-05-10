@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./Chatbot.css";
+import API from "../api";
 
 function Chatbot() {
   const [open, setOpen] = useState(false);
