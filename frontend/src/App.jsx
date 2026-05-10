@@ -8,6 +8,7 @@ import Orders from "./pages/Orders";
 import Login from "./pages/login";
 import Admin from "./pages/Admin";
 import Chatbot from "./components/Chatbot";
+import API from "./api";
 
 import Navbar from "./components/Navbar";
 

@@ -22,9 +22,9 @@ function Login() {
 
       window.location.reload();
     } catch (err) {
-      console.error("LOGIN ERROR:", err.response?.data);
+      console.error("LOGIN ERROR:", err.response?.data || err.message);
 
-      toast.error("Invalid credentials ❌");
+      toast.error("Server waking up... try again in few seconds 🚀");
     }
   };
 
