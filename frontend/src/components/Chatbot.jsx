@@ -37,19 +37,11 @@ function Chatbot() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/ai/chat", {
-        method: "POST",
-
-        headers: {
-          "Content-Type": "application/json",
-        },
-
-        body: JSON.stringify({
-          message,
-        }),
+      const res = await API.post("/ai/chat", {
+        message,
       });
 
-      const data = await res.json();
+      const data = res.data;
 
       const aiMessage = {
         sender: "ai",
