@@ -19,18 +19,9 @@ function App() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await fetch(
-          "https://ai-ecommerce-platform-2wlp.onrender.com/users/me",
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          },
-        );
+        const res = await API.get("/users/me");
 
-        const data = await res.json();
-
-        setUser(data);
+        setUser(res.data);
       } catch (err) {
         console.error(err);
       }
