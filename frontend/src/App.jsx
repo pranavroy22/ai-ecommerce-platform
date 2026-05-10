@@ -5,7 +5,7 @@ import { ToastContainer } from "react-toastify";
 import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 import Orders from "./pages/Orders";
-import Login from "./pages/Login";
+import Login from "./pages/login";
 import Admin from "./pages/Admin";
 import Chatbot from "./components/Chatbot";
 
@@ -19,11 +19,14 @@ function App() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await fetch("http://127.0.0.1:8000/users/me", {
-          headers: {
-            Authorization: `Bearer ${token}`,
+        const res = await fetch(
+          "https://ai-ecommerce-platform-2wlp.onrender.com/users/me",
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
           },
-        });
+        );
 
         const data = await res.json();
 
