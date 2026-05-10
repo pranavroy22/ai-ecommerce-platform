@@ -82,19 +82,19 @@ A modern full-stack AI-powered ecommerce application built using React, FastAPI,
 
 ## Login Page
 
-![Login Page](screenshots/login.png)
+![Login Page](Screenshots/login.png)
 
 ## Products Page
 
-![Products Page](screenshots/products.png)
+![Products Page](Screenshots/products.png)
 
 ## Admin Dashboard
 
-![Admin Dashboard](screenshots/admin.png)
+![Admin Dashboard](Screenshots/admin.png)
 
 ## AI Chatbot
 
-## ![AI Chatbot](screenshots/chatbot.png)
+## ![AI Chatbot](Screenshots/chatbot.png)
 
 # ⚙️ Installation
 
