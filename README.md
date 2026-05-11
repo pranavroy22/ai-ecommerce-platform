@@ -15,6 +15,15 @@ This project includes:
 
 ---
 
+---
+
+<!-- demologin -->
+
+Email : demo@gmail.com
+Pass : 1234
+
+---
+
 # 🚀 Live Demo
 
 ## 🌐 Frontend
