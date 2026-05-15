@@ -172,3 +172,24 @@
     margin: 20px;
   }
 }
+.toggle-text {
+  margin-top: 18px;
+
+  text-align: center;
+
+  color: #555;
+
+  font-size: 14px;
+}
+
+.toggle-text span {
+  color: #007bff;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+.toggle-text span:hover {
+  text-decoration: underline;
+}
