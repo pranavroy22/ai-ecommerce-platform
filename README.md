@@ -32,14 +32,14 @@ Pass : 1234
       ┌─────────────┼─────────────┐
       ▼             ▼             ▼
 
-Authentication Product APIs AI Chatbot
-│ │ │
-└─────────────┼─────────────┘
-▼
-SQLAlchemy ORM
-▼
-SQLite Database
-
+    Authentication Product APIs AI Chatbot
+       |             │             │
+       └─────────────┼─────────────┘
+                     ▼
+                SQLAlchemy ORM
+                     ▼
+                SQLite Database
+                     ▼
            Razorpay Payment API
 
 ---
