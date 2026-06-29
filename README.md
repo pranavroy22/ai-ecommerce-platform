@@ -22,6 +22,28 @@ Pass : 1234
 
 ---
 
+# Architecture Design
+
+                React Frontend
+                      │
+                      │ REST API
+                      ▼
+               FastAPI Backend
+      ┌─────────────┼─────────────┐
+      ▼             ▼             ▼
+
+Authentication Product APIs AI Chatbot
+│ │ │
+└─────────────┼─────────────┘
+▼
+SQLAlchemy ORM
+▼
+SQLite Database
+
+           Razorpay Payment API
+
+---
+
 # 🚀 Live Demo
 
 ## 🌐 Frontend
