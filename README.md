@@ -84,6 +84,14 @@ https://ai-ecommerce-platform-2w1p.onrender.com/docs
 
 ---
 
+## Why I Built This
+
+Most ecommerce projects demonstrate CRUD operations but lack modern AI capabilities.
+
+I built this platform to combine backend engineering with Generative AI by integrating an AI shopping assistant while implementing authentication, payments, role-based authorization, and deployment.
+
+---
+
 # ✨ Features
 
 ## 🔐 Authentication System
